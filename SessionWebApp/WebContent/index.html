@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    body {
+	margin: 10px;
+}
+    .column {
+  float: left;
+  
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+input{
+border: 1px solid grey;
+
+}
+input[type=text]:focus{
+border: 2px solid yellow;
+}
+.a
+{
+border:1px solid black;
+width:350px;
+padding:10px;
+margin: 20px;
+}
+.red
+{ color: red;
+}
+    </style>
+<title>Login Page</title>
+</head>
+<body >
+<img alt="Accenture" src="accenture_LOGO.png" height="70">
+<div class="row">
+<div class="column">
+<img src="accenture_formPHOTO.jpg" height="460" width="800">
+</div>
+<div class="column">
+<div class="a">
+<form action="register" method="get" >
+<center><bold> Not Registered?</bold></center>
+<br>
+<label for="name">Name<span class="red">*</span></label><br>
+<input type="text" id="name" name="name" size="40" required/><br>
+<label for="ID">Candidate Id<span class="red">*</span> </label><br>
+<input type="text" id="id" name="id" size="40" required /><br>
+<label for="contact" >Contact<span class="red">*</span></label>
+<input type="text" name="contact" id="contact" size="40" /><br>
+<label for="Email" >Email Address<span class="red">*</span></label>
+<input type="text" name="email" id="Email" size="40" /><br><br>
+<input type="submit" style="background-color: purple; color: white;" size="500">
+</form>
+</div>
+</div>
+</div>
+<br><br>
+<h5><small style="color: gray;">"Your privacy is important to us. Accenture uses your personal data only in compliance with data protection laws. For further information on how Accenture processes your personal data,
+ please see our <a href="#"> privacy statement</a>."</small></h5>
+</body>
+</html>
